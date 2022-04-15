@@ -17,7 +17,7 @@ import sklearn.neighbors
 import robust_laplacian
 import potpourri3d as pp3d
 
-import src.diffusion_net.utils as utils # temp change while working locally
+import diffusion_net.utils as utils
 from .utils import toNP
 
 

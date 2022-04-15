@@ -14,12 +14,11 @@ import diffusion_net
 
 class DNAMeshDataset(Dataset):
 
-    def __init__(self, data_dir, train, k_eig, use_cache=True, op_cache_dir=None):
+    def __init__(self, data_dir, train, k_eig):
         self.train = train  # bool
         self.root_dir = data_dir
         self.k_eig = k_eig
-        self.cache_dir = os.path.join(data_dir, "cache")
-        self.op_cache_dir = op_cache_dir
+        self.op_cache_dir = os.path.join(data_dir, "cache")
 
         # store in memory
         self.verts_list = []
